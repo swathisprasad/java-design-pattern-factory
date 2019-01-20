@@ -4,13 +4,13 @@ public class PersonFactory {
 
     public static Person getPerson(String type)
     {
-        if (type.equals("BaseRun") ) {
+        if ("BaseRun".equals(type)) {
             return new ConcretePersonA();
         }
-        else if (type.equals("LongRun") ) {
+        else if ("LongRun".equals(type) ) {
             return new ConcretePersonB();
         }
-        else if (type.equals("ProgressionRun") ) {
+        else if ("ProgressionRun".equals(type) ) {
             return new ConcretePersonC();
         }
         return null;
